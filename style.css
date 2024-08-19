@@ -1,0 +1,60 @@
+body {
+    max-width: 1440;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: lightsalmon;
+}
+
+.container {    
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0.8rem;
+}
+
+.moviesList{
+    
+    max-height: 500px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: start;
+}
+
+.movie {
+    margin-bottom: 20px;   
+    flex: 1;
+   
+}
+.pagination {
+    margin-top: 20px;
+}
+.pagination button {
+    margin: 2px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.details {
+    margin-top: 20px;
+    
+}
+.details button {
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+
+
+@media (max-width: 768px) {
+    .movie {
+        /*width: 100%;*/
+        font-size: 0.6rem;
+    }
+
+    /* Adjust button styles for mobile */
+    .pagination button {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
